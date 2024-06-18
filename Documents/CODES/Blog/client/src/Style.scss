@@ -1,0 +1,144 @@
+$blueDark: #44DB76;
+
+
+.app {
+
+     display: flex;
+     justify-content: center;
+
+    .container{ 
+
+        .link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        width: 1024px;
+
+                //Login & Register
+        .auth{
+            display: flex ; 
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; 
+            height: 100vh;
+            background-color: #44DB76 ;
+        }
+
+        h1{
+            font-size: 20px;
+            margin-bottom: 20px;     
+            color: whitesmokes; 
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+            background-color: white;
+            width: 200px;
+            gap: 20px;
+
+            input {
+
+                padding: 10px;
+                border:none; 
+                border-bottom: 1px solid gray;
+
+            } 
+
+            button{
+    
+                padding: 10px;
+                border:none ; 
+                cursor: pointer;
+                color: white;
+                background-color: #44DB76; 
+            
+            } 
+
+            p{
+                color: red; 
+                text-align: center; 
+            }
+
+            span {
+                text-align: center;
+                font-size: 12px;
+            }
+        }
+
+
+    }
+
+    //Navbar 
+
+    .navbar{ 
+        .container{
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0px; 
+        display: flex;
+
+          .logo{
+            img{
+                width: 120px;
+            }
+          }
+          .links{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+          }
+
+          h5 {
+            font-size: 17px;
+            font-weight: 400;
+          }
+
+          span {
+            cursor: pointer;
+          }
+
+          .write {
+            background-color: #44DB76;
+            width: 50px;
+            height: 50px; 
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            display: flex; 
+            font-weight: 300;
+            border: 1px solid white;    
+
+            &:hover{
+                 color: #44DB76 ; 
+                 background-color: white;
+                 border: 1px solid $blueDark;
+            }
+          }
+
+         
+
+        }
+       
+    } 
+
+    // Footer 
+
+    footer {
+        background-color: #44DB76;
+        margin-top: 100px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+
+
+        img{
+            height: 50px;
+            border-radius: 50px;
+        }
+    }
+}
